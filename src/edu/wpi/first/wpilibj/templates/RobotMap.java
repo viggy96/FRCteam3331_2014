@@ -28,6 +28,4 @@ public class RobotMap {
     public static final Jaguar winchMotor = new Jaguar(7);
     
     public static final DigitalInput catapultSwitch = new DigitalInput(2);
-    
-    public static final Timer timer = new Timer();
 }
