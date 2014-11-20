@@ -17,7 +17,7 @@ public class autowinchCommand extends CommandBase {
     DigitalInput catapultSwitch = RobotMap.catapultSwitch;
     
     public autowinchCommand() {
-        requires(WinchSubsystem);
+        requires(WinchSubsystem); 
         requires(PneumaticSubsystem);
     }
 

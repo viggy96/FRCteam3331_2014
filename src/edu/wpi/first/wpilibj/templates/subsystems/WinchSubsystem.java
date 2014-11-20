@@ -12,7 +12,7 @@ public class WinchSubsystem extends Subsystem {
     
     Jaguar winchMotor = RobotMap.winchMotor;
     
-    public void initDefaultCommand() {
+    public void initDefaultCommand() { 
         winchMotor.stopMotor();
     }
     
