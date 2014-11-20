@@ -5,12 +5,16 @@
  */
 package edu.wpi.first.wpilibj.templates.commands;
 
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.templates.RobotMap;
+
 /**
  *
  * @author vignesh
  */
 public class autowinchCommand extends CommandBase {
     boolean finished = false;
+    DigitalInput catapultSwitch = RobotMap.catapultSwitch;
     
     public autowinchCommand() {
         requires(WinchSubsystem);
@@ -25,7 +29,8 @@ public class autowinchCommand extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        finished = WinchSubsystem.autowinch();
+        WinchSubsystem.winch();
+	finished = catapultSwitch.get();
     }
 
     // Make this return true when this Command no longer needs to run execute()
