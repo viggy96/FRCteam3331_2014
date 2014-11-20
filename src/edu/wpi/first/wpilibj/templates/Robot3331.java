@@ -34,7 +34,7 @@ public class Robot3331 extends IterativeRobot {
     }
 
     public void autonomousInit() {
-        // schedule the autonomous command (example)
+        // schedule the autonomous command
         autonomousCommand.start();
     }
 
@@ -51,6 +51,7 @@ public class Robot3331 extends IterativeRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         autonomousCommand.cancel();
+	// schedule the telop command
         telopCommand.start();
     }
 
