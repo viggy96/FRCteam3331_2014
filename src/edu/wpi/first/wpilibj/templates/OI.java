@@ -3,7 +3,6 @@ package edu.wpi.first.wpilibj.templates;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
-import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.templates.commands.clawArmDownCommand;
 import edu.wpi.first.wpilibj.templates.commands.clawArmUpCommand;
@@ -13,7 +12,6 @@ import edu.wpi.first.wpilibj.templates.commands.openClawCommand;
 import edu.wpi.first.wpilibj.templates.commands.openLatchCommand;
 import edu.wpi.first.wpilibj.templates.commands.unwinchCommand;
 import edu.wpi.first.wpilibj.templates.commands.winchCommand;
-import edu.wpi.first.wpilibj.templates.subsystems.PneumaticSubsystem;
 
 /**
  * This class is the glue that binds the controls on the physical operator
