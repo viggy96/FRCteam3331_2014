@@ -29,13 +29,5 @@ public class WinchSubsystem extends Subsystem {
     public void unwinch() {
         winchMotor.set(-1);
     }
-    
-    public boolean autowinch() {
-        do winchMotor.set(1);
-        while (catapultSwitch.get() == false);
-        return true;
-    }
-    
-    
 }
 
