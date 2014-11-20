@@ -30,8 +30,7 @@ public class autowinchCommand extends CommandBase {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        if (finished == true) return true;
-        else return false;
+        return finished;
     }
 
     // Called once after isFinished returns true
