@@ -12,11 +12,11 @@ import edu.wpi.first.wpilibj.templates.RobotMap;
  *
  * @author vignesh
  */
-public class autowinchCommand extends CommandBase {
+public class autoWinchCommand extends CommandBase {
     boolean finished = false;
     DigitalInput catapultSwitch = RobotMap.catapultSwitch;
     
-    public autowinchCommand() {
+    public autoWinchCommand() {
         requires(WinchSubsystem); 
         requires(PneumaticSubsystem);
     }

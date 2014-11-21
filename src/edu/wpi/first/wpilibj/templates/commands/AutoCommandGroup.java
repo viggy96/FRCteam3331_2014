@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class AutoCommandGroup extends CommandGroup {
     
     public AutoCommandGroup() {
-        addParallel(new autowinchCommand());
+        addParallel(new autoWinchCommand());
         addParallel(new autoClawArmDownCommand());
         addSequential(new openLatchCommand());
         addSequential(new AutoDriveCommand());
