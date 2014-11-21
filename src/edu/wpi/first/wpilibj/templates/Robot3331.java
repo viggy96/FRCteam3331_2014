@@ -37,7 +37,7 @@ public class Robot3331 extends IterativeRobot {
         // schedule the autonomous command
         autonomousCommand.start();
     }
-    // hello
+    
     /**
      * This function is called periodically during autonomous
      */
