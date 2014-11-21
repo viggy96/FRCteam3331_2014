@@ -13,7 +13,6 @@ public class autoClawArmUpCommand extends CommandBase {
     
     public autoClawArmUpCommand() {
         requires(ClawArmSubsystem);
-        setTimeout(3);
     }
 
     // Called just before this Command runs the first time
@@ -24,6 +23,7 @@ public class autoClawArmUpCommand extends CommandBase {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
         ClawArmSubsystem.clawArmUp();
+        setTimeout(3);
     }
 
     // Make this return true when this Command no longer needs to run execute()
