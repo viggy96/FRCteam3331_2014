@@ -46,12 +46,12 @@ public class PneumaticSubsystem extends Subsystem {
     }
     
     public void closeLatch() {
-        latchPiston.set(DoubleSolenoid.Value.kForward);
+        latchPiston.set(DoubleSolenoid.Value.kReverse);
         finished = true;
     }
     
     public void openLatch() {
-        latchPiston.set(DoubleSolenoid.Value.kReverse);
+        latchPiston.set(DoubleSolenoid.Value.kForward);
         finished = true;
     }
     
