@@ -22,9 +22,9 @@ public class RobotMap {
     public static final DoubleSolenoid clawPiston = new DoubleSolenoid(1, 2); // forward, reverse
     public static final DoubleSolenoid latchPiston = new DoubleSolenoid(5, 6); // forward, reverse 
     
-    public static final Jaguar leftArmMotor = new Jaguar(5);
-    public static final Jaguar rightArmMotor = new Jaguar(6);
+    public static final Jaguar leftArmMotor = new Jaguar(5); // PWM channel
+    public static final Jaguar rightArmMotor = new Jaguar(6); // PWM channel
     
-    public static final Jaguar winchMotor = new Jaguar(7);
-    public static final DigitalInput catapultSwitch = new DigitalInput(2);
+    public static final Jaguar winchMotor = new Jaguar(7); // PWM channel
+    public static final DigitalInput catapultSwitch = new DigitalInput(2); // Digital I/O sidecar channel
 }
