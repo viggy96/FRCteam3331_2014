@@ -13,6 +13,7 @@ public class AutoDriveCommand extends CommandBase {
     
     public AutoDriveCommand() {
         requires(DriveSubsystem);
+        setTimeout(7);
     }
 
     // Called just before this Command runs the first time
@@ -23,7 +24,6 @@ public class AutoDriveCommand extends CommandBase {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
         DriveSubsystem.autoDrive(1, 1);
-        setTimeout(10);
     }
 
     // Make this return true when this Command no longer needs to run execute()
