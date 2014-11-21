@@ -24,6 +24,7 @@ public class autoWinchCommand extends CommandBase {
     // Called just before this Command runs the first time
     protected void initialize() {
         WinchSubsystem.init();
+        PneumaticSubsystem.openLatch();
         finished = false;
     }
 
