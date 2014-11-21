@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 public class TelopCommandGroup extends CommandGroup {
     
     public TelopCommandGroup() {
-        addParallel(new TelopDriveCommand());
         addParallel(new CompressorCommand());
+        addParallel(new TelopDriveCommand());
     }
 }
