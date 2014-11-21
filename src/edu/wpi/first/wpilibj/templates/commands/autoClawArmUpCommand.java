@@ -13,7 +13,7 @@ public class autoClawArmUpCommand extends CommandBase {
     
     public autoClawArmUpCommand() {
         requires(ClawArmSubsystem);
-        setTimeout(3);
+        setTimeout(2);
     }
 
     // Called just before this Command runs the first time
