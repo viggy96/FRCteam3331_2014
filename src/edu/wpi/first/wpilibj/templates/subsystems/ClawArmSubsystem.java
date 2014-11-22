@@ -17,13 +17,9 @@ public class ClawArmSubsystem extends Subsystem {
     Jaguar leftArmMotor = RobotMap.leftArmMotor, rightArmMotor = RobotMap.rightArmMotor;
     
     public void initDefaultCommand() {
-        leftArmMotor.stopMotor();
-        rightArmMotor.stopMotor();
     }
     
     public void init() {
-        leftArmMotor.stopMotor();
-        rightArmMotor.stopMotor();
     }
     
     
