@@ -32,7 +32,6 @@ public class DriveSubsystem extends Subsystem {
     
     public void telopDrive() {
         drivetrain.arcadeDrive(leftStick, true);
-        
     }
 }
 
