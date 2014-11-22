@@ -24,7 +24,7 @@ public class OI {
             clawDown = new JoystickButton(leftStick, 2),
             clawOpen = new JoystickButton(leftStick, 4),
             clawClose = new JoystickButton(leftStick, 5),
-            latchClose = new JoystickButton(rightStick, 6),
+            latchClose = new JoystickButton(rightStick, 7),
             winch = new JoystickButton(rightStick, 11),
             unwinch = new JoystickButton(rightStick, 10);
     
