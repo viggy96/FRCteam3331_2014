@@ -15,12 +15,15 @@ public class DriveSubsystem extends Subsystem {
     Joystick leftStick = RobotMap.leftStick, rightStick = RobotMap.rightStick;
     
     public void initDefaultCommand() {
-        drivetrain.stopMotor();
-	
     }
     
     public void init() {
         drivetrain.stopMotor();
+        
+        drivetrain.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);
+        drivetrain.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
+        drivetrain.setInvertedMotor(RobotDrive.MotorType.kRearLeft, true);
+        drivetrain.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
     }
     
     public void autoDrive(double leftValue, double rightValue) {
@@ -29,6 +32,7 @@ public class DriveSubsystem extends Subsystem {
     
     public void telopDrive() {
         drivetrain.arcadeDrive(leftStick, true);
+        
     }
 }
 
