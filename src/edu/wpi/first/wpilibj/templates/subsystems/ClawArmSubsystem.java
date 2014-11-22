@@ -28,12 +28,12 @@ public class ClawArmSubsystem extends Subsystem {
     
     
     public void clawArmUp() {
-        leftArmMotor.set(-0.75);
-        rightArmMotor.set(-0.75);
+        leftArmMotor.set(-0.5);
+        rightArmMotor.set(-0.5);
     }
     
     public void clawArmDown() {
-        leftArmMotor.set(0.75);
-        rightArmMotor.set(0.75);
+        leftArmMotor.set(0.5);
+        rightArmMotor.set(0.5);
     }
 }
