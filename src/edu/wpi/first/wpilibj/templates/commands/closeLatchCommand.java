@@ -18,6 +18,7 @@ public class closeLatchCommand extends CommandBase {
     // Called just before this Command runs the first time
     protected void initialize() {
         PneumaticSubsystem.initState();
+        requires(DriveSubsystem);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -34,11 +35,13 @@ public class closeLatchCommand extends CommandBase {
     protected void end() {
         PneumaticSubsystem.initState();
         PneumaticSubsystem.compressor();
+        DriveSubsystem.telopDrive();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
         PneumaticSubsystem.compressor();
+        DriveSubsystem.telopDrive();
     }
 }
