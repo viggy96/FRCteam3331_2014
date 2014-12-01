@@ -13,7 +13,6 @@ public class openClawCommand extends CommandBase {
     
     public openClawCommand() {
         requires(PneumaticSubsystem);
-        requires(DriveSubsystem);
     }
 
     // Called just before this Command runs the first time
@@ -35,13 +34,11 @@ public class openClawCommand extends CommandBase {
     protected void end() {
         PneumaticSubsystem.initState();
         PneumaticSubsystem.compressor();
-        DriveSubsystem.telopDrive();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
         PneumaticSubsystem.compressor();
-        DriveSubsystem.telopDrive();
     }
 }

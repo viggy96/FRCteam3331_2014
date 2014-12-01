@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.templates.RobotMap;
+import edu.wpi.first.wpilibj.templates.commands.TelopDriveCommand;
 
 /**
  *
@@ -15,6 +16,7 @@ public class DriveSubsystem extends Subsystem {
     Joystick leftStick = RobotMap.leftStick, rightStick = RobotMap.rightStick;
     
     public void initDefaultCommand() {
+        setDefaultCommand(new TelopDriveCommand());
     }
     
     public void init() {
@@ -32,6 +34,10 @@ public class DriveSubsystem extends Subsystem {
     
     public void telopDrive() {
         drivetrain.arcadeDrive(leftStick, true);
+    }
+    
+    public void stop() {
+        drivetrain.stopMotor();
     }
 }
 

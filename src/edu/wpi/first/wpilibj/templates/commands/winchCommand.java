@@ -13,7 +13,6 @@ public class winchCommand extends CommandBase {
     
     public winchCommand() {
         requires(WinchSubsystem);
-        requires(DriveSubsystem);
     }
 
     // Called just before this Command runs the first time
@@ -39,6 +38,5 @@ public class winchCommand extends CommandBase {
     // subsystems is scheduled to run
     protected void interrupted() {
         WinchSubsystem.init();
-        DriveSubsystem.telopDrive();
     }
 }

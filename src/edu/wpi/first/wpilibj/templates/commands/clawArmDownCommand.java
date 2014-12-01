@@ -13,7 +13,6 @@ public class clawArmDownCommand extends CommandBase {
     
     public clawArmDownCommand() {
         requires(ClawArmSubsystem);
-        requires(DriveSubsystem);
     }
 
     // Called just before this Command runs the first time
@@ -33,14 +32,11 @@ public class clawArmDownCommand extends CommandBase {
 
     // Called once after isFinished returns true
     protected void end() {
-        ClawArmSubsystem.init();
-        DriveSubsystem.telopDrive();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
         ClawArmSubsystem.init();
-        DriveSubsystem.telopDrive();
     }
 }

@@ -13,7 +13,6 @@ public class unwinchCommand extends CommandBase {
     
     public unwinchCommand() {
         requires(WinchSubsystem);
-        requires(DriveSubsystem);
     }
 
     // Called just before this Command runs the first time
@@ -38,6 +37,5 @@ public class unwinchCommand extends CommandBase {
     // subsystems is scheduled to run
     protected void interrupted() {
         WinchSubsystem.init();
-        DriveSubsystem.telopDrive();
     }
 }
