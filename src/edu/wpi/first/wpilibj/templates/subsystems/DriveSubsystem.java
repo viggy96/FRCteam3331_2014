@@ -5,9 +5,11 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.templates.RobotMap;
+import edu.wpi.first.wpilibj.templates.commands.TelopDriveCommand;
 
 /**
  *
+ * @author vignesh
  */
 public class DriveSubsystem extends Subsystem {
     
@@ -15,6 +17,7 @@ public class DriveSubsystem extends Subsystem {
     Joystick leftStick = RobotMap.leftStick, rightStick = RobotMap.rightStick;
     
     public void initDefaultCommand() {
+        setDefaultCommand(new TelopDriveCommand());
     }
     
     public void init() {
